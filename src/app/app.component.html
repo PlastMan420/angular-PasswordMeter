@@ -1,0 +1,8 @@
+<div>
+	<label for="name">Password<span class="required">*</span></label>
+	<div>
+   		<input class="form-control" type="password" [(ngModel)]="account.password" #password="ngModel">
+	</div>
+</div>
+ 
+<app-password-bar [passwordToCheck]="account.password"></app-password-bar>
