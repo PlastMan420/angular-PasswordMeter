@@ -32,7 +32,7 @@ export class PasswordBarComponent implements OnInit {
 			case (passwordScore <= 80 && passwordScore > 60):
 				idx = 4;
 				break;
-			case (passwordScore > 80):
+			case (passwordScore <= 100 && passwordScore > 80):
 				idx = 5;
 				break;
 		}
@@ -55,7 +55,7 @@ export class PasswordBarComponent implements OnInit {
 	}  
 	private setBarColors(count: number, col: string) {  
 		
-		for (let _n: number = 0; _n < count; _n++) {  
+		for (let _n: number = 0; _n <= count; _n++) {  
 			this.bars.push(col);  
 
 		}  
