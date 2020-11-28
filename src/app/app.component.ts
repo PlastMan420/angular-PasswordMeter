@@ -13,9 +13,9 @@ export class AppComponent {
 		password: new FormControl('', Validators.required),
 	});
 	
-	public account = {  
-			password: ''
-		  };  
+	account = {  
+		password: ''
+		};  
   	 
 }
 
